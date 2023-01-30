@@ -1,0 +1,2 @@
+# django-harjoitus
+Django-harjoittelua 
