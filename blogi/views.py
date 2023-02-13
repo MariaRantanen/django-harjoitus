@@ -14,6 +14,9 @@ def nayta_postaus(request, id):
     context = {"postaus": postaus}
     return render(request, "blogi/postaus.html", context)
 
+def uusi_postaus(request):
+    return render(request, "blogi/uusi_postaus.html")
+
 
 
 
