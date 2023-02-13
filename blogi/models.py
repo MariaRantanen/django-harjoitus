@@ -7,3 +7,4 @@ class Postaus(models.Model):
 
     def __str__(self):
         return self.otsikko
+        
