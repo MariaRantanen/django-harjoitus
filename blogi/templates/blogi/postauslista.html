@@ -11,10 +11,10 @@
 
             <a href="{% url 'nayta_postaus' postaus.id %}">
                 {% if postaus.kuva %}
-                <img src="{{postaus.kuva.url}}" width="50"
+                <img src="{{postaus.kuva.url}}" width="50">
                 {% else %}
-                <img src="{% static '/blogi/ei-kuvaa.svg' %}"
-                    class="card-img-top" alt="">
+                <img src="{% static 'blogi/ei_kuvaa.png' %}"
+                    width="75">
                 {% endif %}
             </a> 
             <div class="card-body">
