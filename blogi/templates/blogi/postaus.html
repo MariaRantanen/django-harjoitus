@@ -14,7 +14,7 @@
 
 {# Lisää sivulle <img>-tagi kuvaa varten, jos postauksella on kuva #}
 {% if postaus.kuva %}
-<img src="{{postaus.kuva.url}}", class="border border-warning"/>
+<img src="{{postaus.kuva.url}}", class="border border-warning border border-5 rounded" alt="75*75"/>
 {% endif %}
 
 {% endblock %}
