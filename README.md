@@ -49,7 +49,7 @@ muutosten pohjalta voi luoda uuden migraatiotiedoston komennolla:
  python manage.py makemigrations
  ```
 
-AINA KUN LUOT UUDEN MIGRAATION MUISTA SIIRTÄÄ MIGRAATIOT TIETOKANTAAN!!
+AINA KUN LUOT UUDEN MIGRAATION MUISTA AJAA LUODUT MIGRAATIOTIEDOSTOT!
  ```sh
  python manage.py migrate
  ```
