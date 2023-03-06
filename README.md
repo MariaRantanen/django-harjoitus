@@ -48,4 +48,9 @@ muutosten pohjalta voi luoda uuden migraatiotiedoston komennolla:
  ```sh
  python manage.py makemigrations
  ```
- 
+
+AINA KUN LUOT UUDEN MIGRAATION MUISTA SIIRTÄÄ MIGRAATIOT TIETOKANTAAN!!
+komennolla
+ ```sh
+ python manage.py migrate
+ ```
