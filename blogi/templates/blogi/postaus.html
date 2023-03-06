@@ -5,11 +5,13 @@
 {# Postauksen otsikko laitetaan <h1>-tagiin #}
 <h1>{{postaus.otsikko}}</h1>
 
+<hr/>
+{# < hr / > yhteenkirjoitettuna luo vaakaviivan #}
+
 {# Postauksen sisältö (teksti-kentästä) laitetaan  <p>-tagin sisälle #}
 <p>
     {{postaus.teksti}}
-        <hr/>
-      {# < hr / > yhteenkirjoitettuna luo vaakaviivan #}
+
 </p>
 
 {# Lisää sivulle <img>-tagi kuvaa varten, jos postauksella on kuva #}
