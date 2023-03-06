@@ -4,9 +4,9 @@ Django-harjoittelua
 # Asennus
 
 1. Tee Python-virtuaaliympäristö
- '''sh
+ ```sh
  python3 - m venv venv
- '''
+ ```
 2. Aktivoi virtuaaliympäristö
     - Voit tehdä tämän VSCodessa, joko vastaamalla YES kun VSCode kysyy
       että aktivoidaanko virtuaaliympäristö tai jos tätä kysymystä ei
@@ -18,32 +18,34 @@ Django-harjoittelua
     - kun virtuaaliympäristö on aktiivinen, niin terminaalissa lukee
       rivin alussa '(venv)'
 3. Asenna tarvittavat Python-paketit
- '''sh 
+ ```sh 
  pip install -r requirements.txt
- '''
+ ```
 4. Aja migraatiot:
- '''sh 
+ ```sh 
  python manage.py migrate
- '''
+ ```
  - Tämä luo SQLite-tietokannan db.sqlite3 - tiedostoon   
 5. Luo pääkäyttäjä:
- '''sh
+ ```sh
  python manage.py createsuperuser
- '''
+ ```
  - Käytä käyttäjätunnusta ja salasanaa, jotka muistat helposti.
   Esim. "admin" ja "admin"
 
 ## Kehitysympäristön käynnistäminen
 
 Aja Djangon runserver komento:
- '''sh
+ ```sh
  python manage.py runserver
- '''
+ ```
 
 ## Uusien migraatiotiedostojen tekeminen
 
 Kun teet muutoksia models.py-tiedostoon, niin model-muutokset pitää
 saada myös tietokantaan. Tähän käytetään migraatiotiedostoja. Tehtyjen
 muutosten pohjalta voi luoda uuden migraatiotiedoston komennolla:
- '''sh
+ ```sh
  python manage.py makemigrations
+ ```
+ 
