@@ -18,7 +18,12 @@
                 {% endif %}
             </a> 
             <div class="card-body">
-                <h5 class="card-title">{{postaus.otsikko}}</h5>
+                <h5 class="card-title"
+                    style="white-space: nowrap;
+                           overflow: hidden;
+                           text-overflow: ellipsis"
+                ></h5>{{postaus.otsikko}}</h5>
+                <hr/>
                 <p class="card-text">{{postaus.luo_ingressi}}</p>
                 <a href="{% url 'nayta_postaus' postaus.id %}"
                    class="btn btn-dark">Lue</a>
